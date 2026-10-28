@@ -1,0 +1,11 @@
+0: Bot
+1: DDoS
+2: DoS GoldenEye
+3: DoS Hulk
+4: DoS Slowhttptest
+5: DoS slowloris
+6: FTP-Patator
+7: PortScan
+8: SSH-Patator
+9: Web Attack � Brute Force
+10: Web Attack � XSS

@@ -1,0 +1,30 @@
+[
+    {
+        "Metric": "Accuracy",
+        "Federated Learning": 0.9942788478783313,
+        "Centralized Learning": 0.9976864306467234,
+        "Federated Learning (%)": 99.43,
+        "Centralized Learning (%)": 99.77
+    },
+    {
+        "Metric": "Precision",
+        "Federated Learning": 0.9936188721104052,
+        "Centralized Learning": 0.99684584616963,
+        "Federated Learning (%)": 99.36,
+        "Centralized Learning (%)": 99.68
+    },
+    {
+        "Metric": "Recall",
+        "Federated Learning": 0.9942788478783313,
+        "Centralized Learning": 0.9976864306467234,
+        "Federated Learning (%)": 99.43,
+        "Centralized Learning (%)": 99.77
+    },
+    {
+        "Metric": "F1 Score",
+        "Federated Learning": 0.9937412875607643,
+        "Centralized Learning": 0.9972138640945062,
+        "Federated Learning (%)": 99.37,
+        "Centralized Learning (%)": 99.72
+    }
+]

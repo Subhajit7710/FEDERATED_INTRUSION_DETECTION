@@ -1,0 +1,52 @@
+# ---------------------------------------------------------------
+# Large dataset files (GitHub rejects files over 100 MB)
+# X_train.npy is ~700 MB, attack_dataset.csv is ~195 MB
+# ---------------------------------------------------------------
+data/processed/**/*.npy
+data/processed/**/*.csv
+data/raw/
+
+# Kept on purpose (small, and the backend needs them):
+#   data/processed/feature_names.txt
+#   data/processed/scaler.joblib
+#   data/processed/stage2/label_mapping.txt
+#   data/processed/stage2/scaled/scaler.joblib
+#   models/**/*.pt          (~86 KB each)
+#   app/sample_bank.npz     (~440 KB, used by the Refresh button)
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# ---------------------------------------------------------------
+# Jupyter / Colab
+# ---------------------------------------------------------------
+.ipynb_checkpoints/
+
+# Flower / Ray simulation logs
+ray_results/
+/tmp/
+
+# ---------------------------------------------------------------
+# Secrets and local settings
+# ---------------------------------------------------------------
+.env
+*.env
+
+# ---------------------------------------------------------------
+# Editors and OS files
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,12 @@
+CICIDS2017 ML-ready dataset
+===========================
+
+Total samples: 2,830,743
+Number of features: 78
+
+BENIGN samples: 2,273,097
+ATTACK samples: 557,646
+
+Binary label mapping:
+BENIGN = 0
+ATTACK = 1

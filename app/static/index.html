@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IDS Model Demo</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <h1>Network Intrusion Detection</h1>
+    <p class="sub">CICIDS2017 · 78 flow features · two-stage DNN (detect → classify)</p>
+  </div>
+  <div id="status" class="status">Loading…</div>
+</header>
+
+<div class="toolbar">
+  <label>Model
+    <select id="model"></select>
+  </label>
+  <label>Sample from
+    <select id="kind">
+      <option value="any">Any flow</option>
+      <option value="benign">Benign only</option>
+      <option value="attack">Attack only</option>
+    </select>
+  </label>
+  <button id="btn-refresh" type="button">Refresh values</button>
+  <button id="btn-fill" type="button" title="Put the sample's real values into the 6 empty fields">Fill empty fields</button>
+  <button id="btn-reset" type="button" title="Undo your edits to the pre-filled fields">Undo edits</button>
+  <span class="spacer"></span>
+  <button id="btn-predict" type="button" class="primary">Predict</button>
+</div>
+
+<main class="layout">
+  <div class="forms">
+    <section class="card">
+      <div class="card-head">
+        <h2>Input required <span class="count" id="req-count">0 / 6</span></h2>
+        <span class="hint">Type a value for each. The placeholder shows the sample's real value.</span>
+      </div>
+      <div id="required-grid" class="grid"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Pre-filled features <span class="count" id="pre-count">72</span></h2>
+        <input id="filter" type="search" placeholder="Filter features…" autocomplete="off">
+      </div>
+      <div id="prefilled-grid" class="grid"></div>
+    </section>
+  </div>
+
+  <aside class="result-col">
+    <section class="card result" id="result">
+      <h2>Prediction</h2>
+      <div id="result-body" class="muted">Fill the 6 empty fields and click Predict.</div>
+    </section>
+    <section class="card info">
+      <h2>Current sample</h2>
+      <dl>
+        <dt>True label</dt><dd id="true-label">–</dd>
+        <dt>Sample row</dt><dd id="sample-index">–</dd>
+        <dt>Edited fields</dt><dd id="edited-count">0</dd>
+      </dl>
+    </section>
+  </aside>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
