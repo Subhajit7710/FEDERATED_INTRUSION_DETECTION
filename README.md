@@ -196,8 +196,6 @@ PyTorch · Flower · scikit-learn · NumPy · FastAPI · Uvicorn · HTML/CSS/Jav
 
 Sharafaldin, I., Lashkari, A. H., & Ghorbani, A. A. (2018). *Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization.* ICISSP 2018. [CICIDS2017](https://www.unb.ca/cic/datasets/ids-2017.html)
 
-## Author
 
-**Subhajit Mahapatra** (25MCA0062)
-Department of Computer Applications, School of Computer Science Engineering and Information Systems, VIT
-Guide: **Dr. Vijay Anand R**, Assistant Professor Sr. Grade 1, SCORE
+
+
